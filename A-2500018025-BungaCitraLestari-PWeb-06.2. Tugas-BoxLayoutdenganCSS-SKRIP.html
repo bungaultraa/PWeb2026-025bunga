@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout 3 Kolom 2 Baris</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .column {
+      flex: 33.33%;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+    }
+
+    .footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Header</h2>
+  </div>
+
+  <!-- Baris pertama -->
+  <div class="row">
+    <div class="column" style="background:#f2f2f2;">Kolom 1 - Informasi</div>
+    <div class="column" style="background:#ddd;">Kolom 2 - Konten</div>
+    <div class="column" style="background:#f2f2f2;">Kolom 3 - Sidebar</div>
+  </div>
+
+  <!-- Baris kedua -->
+  <div class="row">
+    <div class="column" style="background:#ddd;">Kolom 4 - Artikel</div>
+    <div class="column" style="background:#f2f2f2;">Kolom 5 - Galeri</div>
+    <div class="column" style="background:#ddd;">Kolom 6 - Info Tambahan</div>
+  </div>
+
+  <div class="footer">
+    <p>Footer</p>
+  </div>
+
+</body>
+</html>
